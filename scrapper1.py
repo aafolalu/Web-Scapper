@@ -3,9 +3,9 @@ from pip._vendor import requests
 
 url = "http://www.skysports.com/football"
 
-r = requests.get(url)
+r = requests.get(url) #Retrieve URL
 
-html = r.text
-soup = BeautifulSoup(html)
+html = r.text #Return HTML as a string
+soup = BeautifulSoup(html) #Convert to soup
 
-print(soup.prettify())
+print(soup.prettify()) #Output prettified version of soup
